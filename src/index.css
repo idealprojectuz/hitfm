@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Britanica-HeavySemiExpanded';
+    src: url('/fonts/britanica-heavy-semi-expanded.ttf');
+}
+
+@font-face {
+    font-family: 'Actay';
+    src: url('/fonts/ActayCondensed-Thin.otf');
+}
+
+body {
+    font-family: 'Britanica-HeavySemiExpanded', sans-serif;
+}
+
+.title-top {
+    color: #FFF;
+
+    leading-trim: both;
+    text-edge: cap;
+    /* hh */
+    /* font-family: Britanica-HeavySemiExpanded; */
+    /* font-size: 36px; */
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.72px;
+}
+
+.title-bottom {
+    color: #FFF;
+
+    leading-trim: both;
+    /* font-family: Britanica-HeavySemiExpanded; */
+    text-edge: cap;
+    /* 18 */
+    font-family: Actay;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.36px;
+}
+
+.play-icon-wrapper {
+    display: flex;
+    width: 88px;
+    height: 77px;
+    padding: 17px 22px 16px 22px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 500px;
+    background: #FFF;
+}
+
+.menu-button {
+    display: flex;
+    /* width: 77px;
+    height: 77px; */
+    padding: 22px 28px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 500px;
+}
