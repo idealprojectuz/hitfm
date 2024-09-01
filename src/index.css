@@ -9,11 +9,12 @@
 
 @font-face {
     font-family: 'Actay';
-    src: url('/fonts/ActayCondensed-Thin.otf');
+    src: url('/fonts/Actay-Regular.otf');
 }
 
 body {
     font-family: 'Britanica-HeavySemiExpanded', sans-serif;
+    overflow: hidden;
 }
 
 .title-top {
@@ -67,4 +68,133 @@ body {
     gap: 10px;
     flex-shrink: 0;
     border-radius: 500px;
+}
+
+.popup-title {
+    color: #FFF;
+
+    leading-trim: both;
+
+    text-edge: cap;
+    /* font-family: Britanica-HeavySemiExpanded; */
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.48px;
+}
+
+.popup-description {
+    color: #FFF;
+
+    leading-trim: both;
+
+    text-edge: cap;
+    /* 18 */
+    font-family: Actay;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.36px;
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.social-media-item {
+    display: flex;
+    height: 66px;
+    padding: 22px 28px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex: 1 0 0;
+    background-color: rgba(255, 255, 255, 0.11);
+    border-radius: 17px;
+    backdrop-filter: blur(11px);
+    transition: 0.3s linear;
+}
+
+.social-media-item:hover {
+
+    background-color: rgba(255, 255, 255, 0.435);
+}
+
+.modal {
+    transition: 0.3s linear;
+}
+
+.modal.modal-open-header {
+    transform: translateY(0px);
+    filter: opacity(1);
+    visibility: visible;
+}
+
+.modal.modal-close-header {
+    transform: translateY(-420px);
+    filter: opacity(0);
+    visibility: hidden;
+}
+
+.modal.modal-open {
+    transform: translateX(0px);
+    filter: opacity(1);
+    /* transition: 1s ease-in-out transform filter; */
+
+}
+
+.modal.modal-close {
+    transform: translateX(600px);
+    /* transition: 1s ease-in-out transform filter; */
+    filter: opacity(0);
+}
+
+.mobile-top-menu {
+    display: flex;
+    width: 77px;
+    height: 77px;
+    padding: 22px 28px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 500px;
+    background: rgba(0, 32, 34, 0.17);
+
+    backdrop-filter: blur(16.5px);
+}
+
+button {
+    outline: none;
+}
+
+.copywrite-text {
+    color: #FFF;
+
+    leading-trim: both;
+
+    text-edge: cap;
+    font-family: Actay;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.28px;
+}
+
+.copywrite-link {
+    color: #FFF;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Actay;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.28px;
+    text-decoration-line: underline;
 }
