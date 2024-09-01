@@ -1,7 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 export const ModalContent = () => {
   const year = new Date().getFullYear();
-  console.log(year);
   return (
     <div className="mx-[24px] mt-[12px]">
       <h2 className="popup-title ">Biz haqimizda</h2>
