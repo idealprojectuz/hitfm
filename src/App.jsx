@@ -71,7 +71,7 @@ function App() {
 
   return (
     <>
-      <main className="bg-[url(/desktop-banner.png)] relative bg-no-repeat bg-cover bg-center  h-[100svh] w-full">
+      <main className="bg-[url(/desktop-banner.png)] relative overflow-hidden bg-no-repeat bg-cover bg-center  h-[100svh] w-full">
         <div
           className={` md:pt-[80px] pt-[0px] md:pb-[80px] transition-all ${
             isOpenPopUp ? "pb-[12px]" : "pb-[129px]"
@@ -86,7 +86,8 @@ function App() {
         <div
           style={{
             zIndex: -1,
-          }}>
+          }}
+          className="w-full overflow-hidden">
           <img
             src="/bulut-center.png"
             id="bulut1"

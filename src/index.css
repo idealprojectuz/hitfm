@@ -5,27 +5,43 @@
 @font-face {
     font-family: 'Britanica-HeavySemiExpanded';
     src: url('/fonts/britanica-heavy-semi-expanded.ttf');
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Actay';
     src: url('/fonts/Actay-Regular.otf');
+    font-display: swap;
 }
 
 body {
     font-family: 'Britanica-HeavySemiExpanded', sans-serif;
     overflow: hidden;
+
+    -webkit-overflow: hidden;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+
+    /* Firefox */
+
+
+    -webkit-font-smoothing: antialiased;
+    /* Improves font rendering on Safari */
+    -moz-osx-font-smoothing: grayscale;
+    /* Improves font rendering on Firefox (macOS) */
 }
 
 .title-top {
     color: #FFF;
+    font-family: 'Britanica-HeavySemiExpanded', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 
-    leading-trim: both;
-    text-edge: cap;
-    /* hh */
-    /* font-family: Britanica-HeavySemiExpanded; */
-    /* font-size: 36px; */
-    font-style: normal;
+    /* Line trim and text edge are experimental and might not be supported in all browsers */
+    /* leading-trim: both; */
+    /* text-edge: cap; */
+
     font-weight: 400;
     line-height: normal;
     letter-spacing: -0.72px;
@@ -33,14 +49,14 @@ body {
 
 .title-bottom {
     color: #FFF;
+    font-family: 'Actay', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 
-    leading-trim: both;
-    /* font-family: Britanica-HeavySemiExpanded; */
-    text-edge: cap;
-    /* 18 */
-    font-family: Actay;
+    /* leading-trim: both; */
+    /* text-edge: cap; */
+
     font-size: 18px;
-    font-style: normal;
     font-weight: 400;
     line-height: normal;
     letter-spacing: -0.36px;
@@ -60,8 +76,6 @@ body {
 
 .menu-button {
     display: flex;
-    /* width: 77px;
-    height: 77px; */
     padding: 22px 28px;
     justify-content: center;
     align-items: center;
@@ -72,13 +86,14 @@ body {
 
 .popup-title {
     color: #FFF;
+    font-family: 'Britanica-HeavySemiExpanded', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 
-    leading-trim: both;
+    /* leading-trim: both; */
+    /* text-edge: cap; */
 
-    text-edge: cap;
-    /* font-family: Britanica-HeavySemiExpanded; */
     font-size: 24px;
-    font-style: normal;
     font-weight: 400;
     line-height: normal;
     letter-spacing: -0.48px;
@@ -86,14 +101,14 @@ body {
 
 .popup-description {
     color: #FFF;
+    font-family: 'Actay', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 
-    leading-trim: both;
+    /* leading-trim: both; */
+    /* text-edge: cap; */
 
-    text-edge: cap;
-    /* 18 */
-    font-family: Actay;
     font-size: 18px;
-    font-style: normal;
     font-weight: 400;
     line-height: normal;
     letter-spacing: -0.36px;
@@ -115,12 +130,14 @@ body {
     flex: 1 0 0;
     background-color: rgba(255, 255, 255, 0.11);
     border-radius: 17px;
+    -webkit-backdrop-filter: blur(11px);
+    /* Safari support */
     backdrop-filter: blur(11px);
+    /* General support */
     transition: 0.3s linear;
 }
 
 .social-media-item:hover {
-
     background-color: rgba(255, 255, 255, 0.435);
 }
 
@@ -130,27 +147,24 @@ body {
 
 .modal.modal-open-header {
     transform: translateY(0px);
-    filter: opacity(1);
+    opacity: 1;
     visibility: visible;
 }
 
 .modal.modal-close-header {
     transform: translateY(-420px);
-    filter: opacity(0);
+    opacity: 0;
     visibility: hidden;
 }
 
 .modal.modal-open {
     transform: translateX(0px);
-    filter: opacity(1);
-    /* transition: 1s ease-in-out transform filter; */
-
+    opacity: 1;
 }
 
 .modal.modal-close {
     transform: translateX(600px);
-    /* transition: 1s ease-in-out transform filter; */
-    filter: opacity(0);
+    opacity: 0;
 }
 
 .mobile-top-menu {
@@ -164,8 +178,10 @@ body {
     flex-shrink: 0;
     border-radius: 500px;
     background: rgba(0, 32, 34, 0.17);
-
+    -webkit-backdrop-filter: blur(16.5px);
+    /* Safari support */
     backdrop-filter: blur(16.5px);
+    /* General support */
 }
 
 button {
@@ -174,13 +190,14 @@ button {
 
 .copywrite-text {
     color: #FFF;
+    font-family: 'Actay', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 
-    leading-trim: both;
+    /* leading-trim: both; */
+    /* text-edge: cap; */
 
-    text-edge: cap;
-    font-family: Actay;
     font-size: 14px;
-    font-style: normal;
     font-weight: 400;
     line-height: normal;
     letter-spacing: -0.28px;
@@ -188,11 +205,14 @@ button {
 
 .copywrite-link {
     color: #FFF;
-    leading-trim: both;
-    text-edge: cap;
-    font-family: Actay;
+    font-family: 'Actay', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    /* leading-trim: both; */
+    /* text-edge: cap; */
+
     font-size: 14px;
-    font-style: normal;
     font-weight: 400;
     line-height: normal;
     letter-spacing: -0.28px;
