@@ -14,6 +14,10 @@
     font-display: swap;
 }
 
+html {
+    user-select: none;
+}
+
 body {
     font-family: 'Britanica-HeavySemiExpanded', sans-serif;
     overflow: hidden;
