@@ -71,7 +71,7 @@ export const MusicPlayer = ({ isOpenPopUp, setIsOpenPopUp }) => {
         className="w-full md:h-[99px] h-[217px] flex md:justify-between md:flex-row flex-col items-center md:px-[32px] md:pt-[0px] pt-[24px]">
         <div className="flex md:w-[33%] w-[100%] md:gap-[20px] gap-[18px] items-center md:flex-row justify-center ">
           <div>
-            <svg
+            {/* <svg
               width={52}
               height={52}
               viewBox="0 0 52 52"
@@ -83,7 +83,12 @@ export const MusicPlayer = ({ isOpenPopUp, setIsOpenPopUp }) => {
                 d="M4.33325 13C4.33325 8.21354 8.21345 4.33334 12.9999 4.33334H30.3333C35.1197 4.33334 38.9999 8.21354 38.9999 13V30.3333C38.9999 35.1198 35.1197 39 30.3333 39H12.9999C8.21345 39 4.33325 35.1198 4.33325 30.3333V13ZM20.0417 11.375C19.1442 11.375 18.4167 12.1025 18.4167 13V22.1174C17.7532 21.8275 17.0204 21.6667 16.25 21.6667C13.2585 21.6667 10.8333 24.0918 10.8333 27.0833C10.8333 30.0749 13.2585 32.5 16.25 32.5C19.2415 32.5 21.6667 30.0749 21.6667 27.0833V14.7679C25.9773 15.5354 29.25 19.3022 29.25 23.8333C29.25 24.7308 29.9775 25.4583 30.875 25.4583C31.7725 25.4583 32.5 24.7308 32.5 23.8333C32.5 16.9528 26.9222 11.375 20.0417 11.375ZM21.6667 47.6667C18.0295 47.6667 14.9157 45.4262 13.63 42.25H30.3334C36.9148 42.25 42.25 36.9148 42.25 30.3334V13.63C45.4262 14.9157 47.6667 18.0295 47.6667 21.6667V39C47.6667 43.7865 43.7865 47.6667 39 47.6667H21.6667Z"
                 fill="white"
               />
-            </svg>
+            </svg> */}
+            <img
+              src="/logo.svg"
+              alt="logo"
+              className="w-[71px] h-[63px] object-cover"
+            />
           </div>
           <div className="flex flex-col translate-y-[-4px]">
             <div className="title-top xl:text-[36px]  md:text-[25px] text-[36px]">
